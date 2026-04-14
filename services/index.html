@@ -27,12 +27,12 @@
     .page-hero p { color: var(--mid-grey); font-size: 0.95rem; max-width: 480px; margin: 0 auto; line-height: 1.7; }
 
     /* SERVICES */
-    .services-section { padding: 40px 48px 60px; max-width: 1100px; margin: 0 auto; }
+    .services-section { padding: 40px 48px 60px; max-width: 800px; margin: 0 auto; }
 
-    .service-block { display: grid; grid-template-columns: 1fr; gap: 0; margin-bottom: 2px; background: #111; }
-    .service-block.reverse { direction: ltr; }
-    
-    .service-info { padding: 64px 56px; display: flex; flex-direction: column; justify-content: center; }
+    .service-block { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-bottom: 2px; background: #111; }
+    .service-block.reverse { direction: rtl; }
+    .service-block.reverse > * { direction: ltr; }
+    .service-info { padding: 56px 64px; display: flex; flex-direction: column; justify-content: flex-start; }
     .service-number { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 300; color: rgba(255,255,255,0.06); line-height: 1; margin-bottom: -20px; }
     .service-info h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--white); margin-bottom: 16px; }
     .service-info p { font-size: 0.88rem; color: var(--mid-grey); line-height: 1.8; margin-bottom: 24px; }
@@ -96,13 +96,13 @@
 <body>
 
   <nav>
-    <a class="nav-logo" href="../">S&amp;N</a>
+    <a class="nav-logo" href="/">S&amp;N</a>
     <ul class="nav-links">
-      <li><a href="../">Home</a></li>
-      <li><a href="../portfolio/">Portfolio</a></li>
-      <li><a href="../services/" class="active">Services</a></li>
-      <li><a href="../faq/">FAQ</a></li><li><a href="../team/">Our Team</a></li>
-      <li><a href="../#book" class="nav-book">Book Now</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="/#book" class="nav-book">Book Now</a></li>
     </ul>
   </nav>
 
@@ -132,12 +132,18 @@
           <span class="price-from">Starting at</span>
           <span class="price-amount">$60</span>
         </div>
-        <a href="../#book" class="btn-book">Book This Service</a>
-      </div></div>
+        <a href="/#book" class="btn-book">Book This Service</a>
+      </div>
+      <div class="service-visual">
+        <span class="service-tag">Exterior</span>
+        <div class="service-visual-inner">
+          <div class="service-visual-icon">🚗</div>
+        </div>
+      </div>
     </div>
 
     <!-- INTERIOR DETAIL -->
-    <div class="service-block reverse reveal">
+    <div class="service-block reveal">
       <div class="service-info">
         <div class="service-number">02</div>
         <h2>Interior Detail</h2>
@@ -154,8 +160,14 @@
           <span class="price-from">Starting at</span>
           <span class="price-amount">$80</span>
         </div>
-        <a href="../#book" class="btn-book">Book This Service</a>
-      </div></div>
+        <a href="/#book" class="btn-book">Book This Service</a>
+      </div>
+      <div class="service-visual">
+        <span class="service-tag">Interior</span>
+        <div class="service-visual-inner">
+          <div class="service-visual-icon">🪑</div>
+        </div>
+      </div>
     </div>
 
     <!-- FULL DETAIL -->
@@ -176,8 +188,14 @@
           <span class="price-from">Starting at</span>
           <span class="price-amount">$120</span>
         </div>
-        <a href="../#book" class="btn-book">Book This Service</a>
-      </div></div>
+        <a href="/#book" class="btn-book">Book This Service</a>
+      </div>
+      <div class="service-visual">
+        <span class="service-tag">Most Popular</span>
+        <div class="service-visual-inner">
+          <div class="service-visual-icon">✨</div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -186,16 +204,16 @@
     <p class="label reveal">Ready?</p>
     <h2 class="reveal reveal-delay-1">Book your detail<br>today.</h2>
     <p class="reveal reveal-delay-2">We come to you in San Marino and the surrounding area. Same-week availability most weeks.</p>
-    <a href="../#book" class="btn-dark reveal reveal-delay-3">Book Now &rarr;</a>
+    <a href="/#book" class="btn-dark reveal reveal-delay-3">Book Now &rarr;</a>
   </section>
 
   <footer>
     <div class="footer-logo">S&amp;N Car Detailing</div>
     <ul class="footer-links">
-      <li><a href="../portfolio/">Portfolio</a></li>
-      <li><a href="../services/">Services</a></li>
-      <li><a href="../faq/">FAQ</a></li><li><a href="../team/">Our Team</a></li>
-      <li><a href="../#book">Contact</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="/#book">Contact</a></li>
     </ul>
     <p class="footer-copy">&copy; 2025 Straus &amp; Noel Car Detailing. San Marino, CA.</p>
   </footer>
